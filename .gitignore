@@ -1,0 +1,49 @@
+# Fichiers Python
+*.pyc
+*.pyo
+__pycache__/
+*.pyd
+
+# Base de données SQLite
+db.sqlite3
+
+# Dossiers de migration Django
+migrations/
+*/migrations/
+
+# Fichiers de configuration/d'environnement
+.env
+*.env
+
+# Fichiers de logs
+*.log
+
+# Dossiers de l'IDE
+.vscode/
+.idea/
+
+# Fichiers générés par pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Fichiers de tests
+htmlcov/
+.coverage
+.tox/
+.nox/
+.pytest_cache/
+
+# Fichiers statiques collectés
+staticfiles/
+static/
+media/
+
+# Fichiers de cache
+.DS_Store
+Thumbs.db
+
+# Docker
+*.pid
+
+# Autres
+*.swp
