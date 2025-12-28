@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="importmap">
+      {
+        "imports": {
+          "@material/web/": "https://esm.run/@material/web/"
+        }
+      }
+    </script>
+    <script type="module">
+      import "@material/web/all.js";
+      import { styles as typescaleStyles } from "@material/web/typography/md-typescale-styles.js";
+
+      document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+    </script>
+
+    <title>Détail du Livre</title>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      main {
+        width: 80%;
+        margin-top: 20px;
+      }
+      .details {
+        margin-bottom: 20px;
+      }
+      footer {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        padding: 20px 0;
+        background-color: #f5f5f5;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <md-card class="details">
+        <h1 class="md-typescale-headline-large">Titre: La volonté du dragon</h1>
+        <p class="md-sys-typescale-body-large">
+          <strong>Auteur:</strong> Lionel Davoust
+        </p>
+        <p class="md-sys-typescale-body-large">
+          <strong>Maison d'édition:</strong> Critic
+        </p>
+        <p class="md-sys-typescale-body-large">
+          <strong>Année de parution:</strong> 2010
+        </p>
+        <p class="md-sys-typescale-body-large"><strong>ISBN:</strong> 978-2-9534998-1-0 </p>
+        <h2 class="md-typescale-title-large">Quatrième de couverture :</h2>
+        <p class="md-sys-typescale-body-large">Une reine dont les yeux émeraude lisent l'avenir... Un enfant-roi, passablement fou, gardien d'un savoir oublié... Du déroulement de leur partie d'échecs pourrait bien se décider l'issue de la guerre... Entre les derniers royaumes libres et les forces d'invasion de l'Empire d'Asreth se dresse l'imprenable Qhmarr, petit pays à peine sorti de l'ère médiévale. Gouverné par un roi trop jeune et un conseiller trop confiant, il ne devrait représenter dans le plan de conquête de l'Empire qu'une note de bas de page. Et alors que le généralissime D'eolus Vasteth s'emploie à négocier les modalités d'une reddition diplomatique, déjà, aux portes de la capitale, se presse l'implacable armada... La conclusion du conflit ne fait aucun doute. D'une manière ou d'une autre, Qhmarr passera sous pavillon asrien. Pourtant, malgré la défaite annoncée, Vasteth découvre des dirigeants qhmarri inflexibles, prêts à confier le destin de leur nation à d'absurdes croyances ancestrales. À travers le défi lancé par l'enfant-roi, ce sont toutes les certitudes du généralissime qui vont se voir ébranlées, tandis que, sur la mer, les soldats meurent, simples pions sur un échiquier qui les dépasse... Lionel Davoust est l'auteur d'une dizaine de nouvelles dont « L'île close », lauréate du prix Imaginales 2009, qui a connu une traduction américaine. La Volonté du Dragon développe l'univers d'Évanégyre introduit dans la nouvelle « Bataille pour un Souvenir » (finaliste de la dernière sélection des Utopiales). Avec ce court roman indépendant, il nous plonge dans l'affrontement inégal entre un puissant empire, fort d'avoir dompté une magie par la technologie, et un petit pays au culte passéiste ; l'occasion, pour lui, d'opposer deux façons de penser le monde. Un conflit passionnant où l'on est bien en peine de deviner qui sera mis « échec et mat ».</p>
+      </md-card>
+    </main>
+
+    <footer>
+      <md-text-button href="../books.html">Menu des Livres</md-text-button>
+      <md-text-button href="../index.html">Accueil</md-text-button>
+    </footer>
+  </body>
+</html>

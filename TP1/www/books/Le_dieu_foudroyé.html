@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="importmap">
+      {
+        "imports": {
+          "@material/web/": "https://esm.run/@material/web/"
+        }
+      }
+    </script>
+    <script type="module">
+      import "@material/web/all.js";
+      import { styles as typescaleStyles } from "@material/web/typography/md-typescale-styles.js";
+
+      document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+    </script>
+
+    <title>Détail du Livre</title>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      main {
+        width: 80%;
+        margin-top: 20px;
+      }
+      .details {
+        margin-bottom: 20px;
+      }
+      footer {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        padding: 20px 0;
+        background-color: #f5f5f5;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <md-card class="details">
+        <h1 class="md-typescale-headline-large">Titre: Le dieu foudroyé</h1>
+        <p class="md-sys-typescale-body-large">
+          <strong>Auteur:</strong> Nathalie Henneberg
+        </p>
+        <p class="md-sys-typescale-body-large">
+          <strong>Maison d'édition:</strong> L'Atalante
+        </p>
+        <p class="md-sys-typescale-body-large">
+          <strong>Année de parution:</strong> 1999
+        </p>
+        <p class="md-sys-typescale-body-large"><strong>ISBN:</strong> 2-84172-120-5</p>
+        <h2 class="md-typescale-title-large">Quatrième de couverture :</h2>
+        <p class="md-sys-typescale-body-large">En 1976, un an avant sa mort, Nathalie Henneberg publie Le Dieu foudroyé, prolongement et coda de La Plaie ; c'est l'ultime chant de son oeuvre. Lyrique plus que jamais, elle y met en scène la difficile reconquête de la Terre, citadelle des Ténèbres devenue le nouvel Enfer de Dante, longtemps après la victoire remportée in extremis sur Sigma d'Arcturus. Airth Reg, le mutant qui s'est fait pirate pour combattre la Plaie, ne supportait plus l'inertie de ses compagnons. Il est parti seul pour un voyage vers l'indicible... et reviendra prendre la tête des escadres de la Reconquête, sanglant et déchiré, mais fort d'un amour nouveau. « Je crois fermement que le sort d'un humain est la démesure. Celui du cosmos aussi. » Il n'est rien de comparable à cet oratorio de science-fiction, vision hallucinée des passions qui bouleversent l'humanité.</p>
+      </md-card>
+    </main>
+
+    <footer>
+      <md-text-button href="../books.html">Menu des Livres</md-text-button>
+      <md-text-button href="../index.html">Accueil</md-text-button>
+    </footer>
+  </body>
+</html>

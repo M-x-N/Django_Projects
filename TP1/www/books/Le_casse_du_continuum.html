@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="importmap">
+      {
+        "imports": {
+          "@material/web/": "https://esm.run/@material/web/"
+        }
+      }
+    </script>
+    <script type="module">
+      import "@material/web/all.js";
+      import { styles as typescaleStyles } from "@material/web/typography/md-typescale-styles.js";
+
+      document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+    </script>
+
+    <title>Détail du Livre</title>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      main {
+        width: 80%;
+        margin-top: 20px;
+      }
+      .details {
+        margin-bottom: 20px;
+      }
+      footer {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        padding: 20px 0;
+        background-color: #f5f5f5;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <md-card class="details">
+        <h1 class="md-typescale-headline-large">Titre: Le casse du continuum</h1>
+        <p class="md-sys-typescale-body-large">
+          <strong>Auteur:</strong> Léo Henry
+        </p>
+        <p class="md-sys-typescale-body-large">
+          <strong>Maison d'édition:</strong> Gallimard
+        </p>
+        <p class="md-sys-typescale-body-large">
+          <strong>Année de parution:</strong> 2014
+        </p>
+        <p class="md-sys-typescale-body-large"><strong>ISBN:</strong> 978-2-07-045147-0</p>
+        <h2 class="md-typescale-title-large">Quatrième de couverture :</h2>
+        <p class="md-sys-typescale-body-large">Ils sont sept. Les meilleurs dans leur domaine respectif : maniement d'explosifs, charisme, assassinat, braquage, séduction… Ils n'ont, a priori, rien en commun mais vont devoir mettre de côté leurs rivalités et s'associer pour une mission secrète insolite. En cas de succès, ils pourraient devenir les sauveurs de l'humanité tout entière. En cas d'échec : la mort ou pire encore. L'enjeu ? Réussir le casse du continuum. Thriller de science-fiction convoquant tour à tour les souvenirs d'Ocean's Eleven, de Ratinox, d'Inception, de James Bond et de bien d'autres, Le casse du continuum est l'occasion pour Léo Henry de laisser miroiter toutes les facettes de son talent : intelligence scénaristique, style affûté, imagination débordante, humour ravageur… Léo Henry naît à Strasbourg en 1979. Il est l'auteur de très nombreuses nouvelles, notamment du cycle consacré à Yirminadingrad, co-écrit avec Jacques Mucchielli, et de « Les trois livres qu'Absalon Nathan n'écrira jamais », nouvelle parue dans l'anthologie Retour sur l'horizon, aux Éditions Denoël, lauréate du Grand Prix de l'Imaginaire en 2010. Le casse du continuum est son troisième roman.</p>
+      </md-card>
+    </main>
+
+    <footer>
+      <md-text-button href="../books.html">Menu des Livres</md-text-button>
+      <md-text-button href="../index.html">Accueil</md-text-button>
+    </footer>
+  </body>
+</html>

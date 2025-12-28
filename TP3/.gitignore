@@ -1,0 +1,6 @@
+/tp3/bonnes_lectures/__pycache__/
+/tp3/bonnes_lectures/migrations/*
+
+/tp3/__pycache__/
+
+db.sqlite3

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="importmap">
+      {
+        "imports": {
+          "@material/web/": "https://esm.run/@material/web/"
+        }
+      }
+    </script>
+    <script type="module">
+      import "@material/web/all.js";
+      import { styles as typescaleStyles } from "@material/web/typography/md-typescale-styles.js";
+
+      document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+    </script>
+
+    <title>Détail du Livre</title>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      main {
+        width: 80%;
+        margin-top: 20px;
+      }
+      .details {
+        margin-bottom: 20px;
+      }
+      footer {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        padding: 20px 0;
+        background-color: #f5f5f5;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <md-card class="details">
+        <h1 class="md-typescale-headline-large">Titre: %TITRE%</h1>
+        <p class="md-sys-typescale-body-large">
+          <strong>Auteur:</strong> %AUTEUR%
+        </p>
+        <p class="md-sys-typescale-body-large">
+          <strong>Maison d'édition:</strong> %EDITION%
+        </p>
+        <p class="md-sys-typescale-body-large">
+          <strong>Année de parution:</strong> %PARUTION%
+        </p>
+        <p class="md-sys-typescale-body-large"><strong>ISBN:</strong> %ISBN%</p>
+        <h2 class="md-typescale-title-large">Quatrième de couverture :</h2>
+        <p class="md-sys-typescale-body-large">%COUVERTURE%</p>
+      </md-card>
+    </main>
+
+    <footer>
+      <md-text-button href="../books.html">Menu des Livres</md-text-button>
+      <md-text-button href="../index.html">Accueil</md-text-button>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h1>Voulez-vous vraiment effacer le livre "{{ book.title }}" ?</h1>
+    <ul>
+        <li><b>Auteur : </b>{{ book.author }}</li>
+        <li><b>Date de publication : </b>{{ book.year }}</li>
+        <li><b>book : </b>{{ book.backCover }}</li>
+    </ul>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit" name="delete">Effacer</button>
+    </form>
+    <p><a href={% url "index" %}>Retour aux livres</a></p>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="importmap">
+      {
+        "imports": {
+          "@material/web/": "https://esm.run/@material/web/"
+        }
+      }
+    </script>
+    <script type="module">
+      import "@material/web/all.js";
+      import { styles as typescaleStyles } from "@material/web/typography/md-typescale-styles.js";
+
+      document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+    </script>
+
+    <title>Détail du Livre</title>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      main {
+        width: 80%;
+        margin-top: 20px;
+      }
+      .details {
+        margin-bottom: 20px;
+      }
+      footer {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        padding: 20px 0;
+        background-color: #f5f5f5;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <md-card class="details">
+        <h1 class="md-typescale-headline-large">Titre: Le Soleil des Phaulnes</h1>
+        <p class="md-sys-typescale-body-large">
+          <strong>Auteur:</strong> Thierry Di Rollo
+        </p>
+        <p class="md-sys-typescale-body-large">
+          <strong>Maison d'édition:</strong> Le Bélial'
+        </p>
+        <p class="md-sys-typescale-body-large">
+          <strong>Année de parution:</strong> 2022
+        </p>
+        <p class="md-sys-typescale-body-large"><strong>ISBN:</strong> 978-2-84344-995-6</p>
+        <h2 class="md-typescale-title-large">Quatrième de couverture :</h2>
+        <p class="md-sys-typescale-body-large">Griddine est une Phaulne. À l’instar de ses parents avant elle, et des parents de ses parents, elle parcourt les plaines sauvages de Gobo à dos de war-lizzard, libre et farouche, sous les rais de l’étoile Titéo. Une perpétuité d’horizons lointains, une vie simple et pleine nourrie aux bonheurs de l’évidence. Jusqu’à l’arrivée de San Salkar, l’émissaire de la Garmak, une multimondiale aux pouvoirs sans limites. Salkar qui, sitôt descendu de son vaisseau spatial, annonce aux Phaulnes la fin de Titéo, la Garmak ayant décidé d’exploiter le soleil de Gobo jusqu’à épuisement. La seule option offerte aux Phaulnes est la diaspora. Ou la rébellion, la résistance et la guerre, des flèches face à une technologie capable de tuer une étoile. Or, Griddine a déjà fait son choix... « Chez Di Rollo, il n’y a aucune compromission, aucun espoir, aucun rachat. Brillent une écriture efficace et une atmosphère persistante. » FRÉDÉRIQUE ROUSSEL - LIBÉRATION</p>
+      </md-card>
+    </main>
+
+    <footer>
+      <md-text-button href="../books.html">Menu des Livres</md-text-button>
+      <md-text-button href="../index.html">Accueil</md-text-button>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="importmap">
+      {
+        "imports": {
+          "@material/web/": "https://esm.run/@material/web/"
+        }
+      }
+    </script>
+    <script type="module">
+      import "@material/web/all.js";
+      import { styles as typescaleStyles } from "@material/web/typography/md-typescale-styles.js";
+
+      document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+    </script>
+
+    <title>Détail du Livre</title>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      main {
+        width: 80%;
+        margin-top: 20px;
+      }
+      .details {
+        margin-bottom: 20px;
+      }
+      footer {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        padding: 20px 0;
+        background-color: #f5f5f5;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <md-card class="details">
+        <h1 class="md-typescale-headline-large">Titre: Clones & Chimères</h1>
+        <p class="md-sys-typescale-body-large">
+          <strong>Auteur:</strong> Andréa Deslacs
+        </p>
+        <p class="md-sys-typescale-body-large">
+          <strong>Maison d'édition:</strong> Arkuiris
+        </p>
+        <p class="md-sys-typescale-body-large">
+          <strong>Année de parution:</strong> 2022
+        </p>
+        <p class="md-sys-typescale-body-large">
+          <strong>ISBN:</strong> 978-2-919090-30-3
+        </p>
+        <h2 class="md-typescale-title-large">Quatrième de couverture :</h2>
+        <p class="md-sys-typescale-body-large">
+          Depuis les temps mythologiques, les chimères combinent les qualités
+          physiques et sensorielles de plusieurs espèces animales ou végétales
+          pour devenir des créatures terribles ou parfaites. De nos jours, le
+          biomimétisme inspire les ingénieurs, pourquoi les biologistes de
+          demain seraient-ils en reste ? Or, quitte à avoir un être adapté à un
+          environnement, à une situation, à une tâche, pourquoi ne pas en
+          disposer de plusieurs ? Qu’est-ce qui l'empêcherait ? Une difficulté
+          technique ou... éthique ? Car toute modification de l’homme ou de son
+          environnement a des conséquences sur la vie de chacun, ainsi que sur
+          nos sociétés. Treize auteurs vous invitent à visiter leurs univers,
+          pour mieux rêver, choisir, contester ou épouser ce monde qui nous
+          attend demain. Andréa Deslacs est une auteure espiègle qui a clos ses
+          études par une thèse sur la médecine de demain vue par la
+          science-fiction. Elle a publié nombre de romans et nouvelles de
+          science-fiction fantasy fantastique, et officie comme anthologiste aux
+          éditions Arkuiris, pour des thématiques d’éthique médicale et leurs
+          conséquences sociétales.
+        </p>
+      </md-card>
+    </main>
+
+    <footer>
+      <md-text-button href="../books.html">Menu des Livres</md-text-button>
+      <md-text-button href="../index.html">Accueil</md-text-button>
+    </footer>
+  </body>
+</html>

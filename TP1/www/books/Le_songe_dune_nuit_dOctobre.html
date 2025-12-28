@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="importmap">
+      {
+        "imports": {
+          "@material/web/": "https://esm.run/@material/web/"
+        }
+      }
+    </script>
+    <script type="module">
+      import "@material/web/all.js";
+      import { styles as typescaleStyles } from "@material/web/typography/md-typescale-styles.js";
+
+      document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+    </script>
+
+    <title>Détail du Livre</title>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      main {
+        width: 80%;
+        margin-top: 20px;
+      }
+      .details {
+        margin-bottom: 20px;
+      }
+      footer {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        padding: 20px 0;
+        background-color: #f5f5f5;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <md-card class="details">
+        <h1 class="md-typescale-headline-large">Titre: Le songe d'une nuit d'Octobre</h1>
+        <p class="md-sys-typescale-body-large">
+          <strong>Auteur:</strong> Robert Zelazny
+        </p>
+        <p class="md-sys-typescale-body-large">
+          <strong>Maison d'édition:</strong> ActuSF
+        </p>
+        <p class="md-sys-typescale-body-large">
+          <strong>Année de parution:</strong> 2019
+        </p>
+        <p class="md-sys-typescale-body-large"><strong>ISBN:</strong> 978-2-36629-978-6</p>
+        <h2 class="md-typescale-title-large">Quatrième de couverture :</h2>
+        <p class="md-sys-typescale-body-large">Octobre. Dans 31 jours, le portail s’ouvrira et les Grands Anciens déferleront sur le monde Dracula, Sherlock Holmes, Raspoutine, le docteur Frankenstein… Ils seront tous là. Mais feront-ils partie des ouvreurs avides de pouvoir, ou seront-ils des fermeurs qui s’opposeront aux horreurs indicibles ? Les familiers de ces personnages seront eux aussi impliqués dans cette murder party ésotérique riche en rebondissements. Tout particulièrement Snuff, un chien dont le maître, Jack, aime se promener la nuit dans Londres avec son grand couteau... Le Jeu va commencer. Quel sera votre camp ? Roger Zelazny est l’auteur de la saga des Neuf Princes d’Ambre. Avec Le Songe d’une nuit d’octobre, il rend hommage avec humour à l’univers de H.P. Lovecraft.</p>
+      </md-card>
+    </main>
+
+    <footer>
+      <md-text-button href="../books.html">Menu des Livres</md-text-button>
+      <md-text-button href="../index.html">Accueil</md-text-button>
+    </footer>
+  </body>
+</html>

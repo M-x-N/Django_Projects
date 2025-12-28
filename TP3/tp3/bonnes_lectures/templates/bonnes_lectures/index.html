@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bonnes Lectures</title>
+</head>
+<body>
+  <h1>Bonnes Lectures</h1>
+  <ul>
+    {% for book in all_book %}
+      <li><b>{{ book.author }} </b><a href={% url 'book' book.id %}>{{ book.title }}</a></li>
+    {% endfor %}
+  </ul>
+</body>
+</html>

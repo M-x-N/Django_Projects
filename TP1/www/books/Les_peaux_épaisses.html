@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="importmap">
+      {
+        "imports": {
+          "@material/web/": "https://esm.run/@material/web/"
+        }
+      }
+    </script>
+    <script type="module">
+      import "@material/web/all.js";
+      import { styles as typescaleStyles } from "@material/web/typography/md-typescale-styles.js";
+
+      document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+    </script>
+
+    <title>Détail du Livre</title>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      main {
+        width: 80%;
+        margin-top: 20px;
+      }
+      .details {
+        margin-bottom: 20px;
+      }
+      footer {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        padding: 20px 0;
+        background-color: #f5f5f5;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <md-card class="details">
+        <h1 class="md-typescale-headline-large">Titre: Les peaux épaisses</h1>
+        <p class="md-sys-typescale-body-large">
+          <strong>Auteur:</strong> Laurent Genefort
+        </p>
+        <p class="md-sys-typescale-body-large">
+          <strong>Maison d'édition:</strong> Folio-SF
+        </p>
+        <p class="md-sys-typescale-body-large">
+          <strong>Année de parution:</strong> 2018
+        </p>
+        <p class="md-sys-typescale-body-large"><strong>ISBN:</strong> 978-2-07-275219-3</p>
+        <h2 class="md-typescale-title-large">Quatrième de couverture :</h2>
+        <p class="md-sys-typescale-body-large">Roko et Lark, l'élève et le maître, sont deux mercenaires que tout oppose : Lark est un ancien peau-épaisse, un humain génétiquement modifié pour travailler dans l’espace. Roko, quant à lui, déteste les peaux-épaisses, qu’il traque afin de revendre leurs précieuses peaux. Lorsque Lark apprend que Roko a été embauché pour exterminer son clan, il décide de tout faire pour l'en empêcher. Lequel des deux atteindra son but ? Les peaux-épaisses est un space opera dont l'univers, riche en inventions technologiques, sert une intrigue nerveuse digne des meilleurs romans d'aventures. Né en 1968, Laurent Genefort découvre très tôt la science-fiction. Il publie son premier roman à l'âge de vingt ans et en a écrit depuis une quarantaine, parmi lesquels la série Omale dont le dernier tome a paru en 2014 aux Éditions Denoël. Il a également soutenu une thèse sur les livres-univers dans la science-fiction.</p>
+      </md-card>
+    </main>
+
+    <footer>
+      <md-text-button href="../books.html">Menu des Livres</md-text-button>
+      <md-text-button href="../index.html">Accueil</md-text-button>
+    </footer>
+  </body>
+</html>

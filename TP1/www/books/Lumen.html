@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="importmap">
+      {
+        "imports": {
+          "@material/web/": "https://esm.run/@material/web/"
+        }
+      }
+    </script>
+    <script type="module">
+      import "@material/web/all.js";
+      import { styles as typescaleStyles } from "@material/web/typography/md-typescale-styles.js";
+
+      document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+    </script>
+
+    <title>Détail du Livre</title>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      main {
+        width: 80%;
+        margin-top: 20px;
+      }
+      .details {
+        margin-bottom: 20px;
+      }
+      footer {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        padding: 20px 0;
+        background-color: #f5f5f5;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <md-card class="details">
+        <h1 class="md-typescale-headline-large">Titre: Lumen</h1>
+        <p class="md-sys-typescale-body-large">
+          <strong>Auteur:</strong> Laurent Genefort
+        </p>
+        <p class="md-sys-typescale-body-large">
+          <strong>Maison d'édition:</strong> Le Bélial'
+        </p>
+        <p class="md-sys-typescale-body-large">
+          <strong>Année de parution:</strong> 2015
+        </p>
+        <p class="md-sys-typescale-body-large"><strong>ISBN:</strong> 978-2-84344-135-6</p>
+        <h2 class="md-typescale-title-large">Quatrième de couverture :</h2>
+        <p class="md-sys-typescale-body-large">« La vie intelligente sur Garance apparut cent mille ans avant que la planète ne porte ce nom. Cette vie-là n’était pas humaine, ni même organique. Lum’en était unique en son genre... » Imaginez une étoile avoisinant sept dixièmes de masse solaire... Si vous levez les yeux, il se peut que vous aperceviez son éclat blanc-jaune sur la face antérieure du bras spiral d’Orion, à sept mille parsecs du centre galactique. Le système de Grnc.mld1 compte six planètes : cinq telluriques et une gazeuse. De ces six planètes, Garance est la seule qui évolue dans la zone d’habitabilité. Lum’en relate la colonisation de Garance, une planète comme tant d’autres, du moins en apparence... L’histoire de ces femmes, de ces hommes rudes lancés à la conquête d’un monde, le récit des luttes de ces pionniers qui, au fil des générations, vont écrire la plus exceptionnelle des aventures, la plus terrible, aussi, celle de l’ancrage, du développement puis, inéluctable, du déclin d’une colonie dans les confins. L’essence même de la nature humaine, en somme, la quête d’horizons nouveaux. Quitte à rater l’essentiel... Né en 1968, Laurent Genefort a vingt ans lorsque paraît son premier roman dans la mythique collection « Anticipation » du Fleuve Noir. Quarante ouvrages plus tard, deux Grand Prix de l’Imaginaire et un prix Rosny Aîné en poche, il est l’une des figures de proue de la science-fiction française et, sans doute, le meilleur créateur d’univers du domaine. Lum’en est le quatrième de ses livres à paraître aux éditions du Bélial’.</p>
+      </md-card>
+    </main>
+
+    <footer>
+      <md-text-button href="../books.html">Menu des Livres</md-text-button>
+      <md-text-button href="../index.html">Accueil</md-text-button>
+    </footer>
+  </body>
+</html>

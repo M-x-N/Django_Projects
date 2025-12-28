@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="importmap">
+      {
+        "imports": {
+          "@material/web/": "https://esm.run/@material/web/"
+        }
+      }
+    </script>
+    <script type="module">
+      import "@material/web/all.js";
+      import { styles as typescaleStyles } from "@material/web/typography/md-typescale-styles.js";
+
+      document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+    </script>
+
+    <title>Détail du Livre</title>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      main {
+        width: 80%;
+        margin-top: 20px;
+      }
+      .details {
+        margin-bottom: 20px;
+      }
+      footer {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        padding: 20px 0;
+        background-color: #f5f5f5;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <md-card class="details">
+        <h1 class="md-typescale-headline-large">Titre: Trois coracles cinglaient vers le couchant</h1>
+        <p class="md-sys-typescale-body-large">
+          <strong>Auteur:</strong> Alex 
+        </p>
+        <p class="md-sys-typescale-body-large">
+          <strong>Maison d'édition:</strong> Les moutons électriques
+        </p>
+        <p class="md-sys-typescale-body-large">
+          <strong>Année de parution:</strong> 2024
+        </p>
+        <p class="md-sys-typescale-body-large"><strong>ISBN:</strong>  978-2-36183-913-0</p>
+        <h2 class="md-typescale-title-large">Quatrième de couverture :</h2>
+        <p class="md-sys-typescale-body-large">UTHER, ROI DES CELTES, CHERCHE SON DESTIN ! Trois coracles cinglaient vers le couchant. À leur bord, Uther, un chef de guerre de l'île de Bretagne, et ses compagnons de toujours. Leur destination, une île au bout de la mer, là où dit-on vivent les fées et les morts. Que va-t-il chercher si loin des terres habitées par les hommes ? Uther sait-il seulement qu'il va enfanter d'une légende destinée à traverser les siècles ? Pour son troisième roman, le scénariste et traducteur de BD Alex Nikolavitch livre une œuvre de maturité, belle et ambitieuse, entre fable de fantasy (la quête) et récit historique (la vie du roi). Entre la nostalgie puissante engendrée par l'effacement de l'Empire romain et l'espoir d'une liberté pour l'archipel britannique, un grand destin se tisse, à la fois intime et historique.</p>
+      </md-card>
+    </main>
+
+    <footer>
+      <md-text-button href="../books.html">Menu des Livres</md-text-button>
+      <md-text-button href="../index.html">Accueil</md-text-button>
+    </footer>
+  </body>
+</html>

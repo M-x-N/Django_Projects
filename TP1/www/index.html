@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="importmap">
+      {
+        "imports": {
+          "@material/web/": "https://esm.run/@material/web/"
+        }
+      }
+    </script>
+    <script type="module">
+      import "@material/web/all.js";
+      import { styles as typescaleStyles } from "@material/web/typography/md-typescale-styles.js";
+
+      document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+    </script>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1rem;
+        background-color: #f5f5f5;
+      }
+
+      main {
+        padding: 1rem;
+      }
+
+      footer {
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+        background-color: #f5f5f5;
+      }
+
+      md-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        margin: 1rem;
+      }
+
+      md-button {
+        color: #000;
+      }
+
+      a {
+        text-decoration: none;
+        color: #000;
+      }
+    </style>
+    <title>Bibliothèque</title>
+  </head>
+  <body>
+    <nav>
+      <md-outlined-button variant="text" href="index.html"
+        >Accueil
+      </md-outlined-button>
+      <md-outlined-button variant="text" href="books.html"
+        >Livres</md-outlined-button
+      >
+      <md-outlined-button variant="text" href="auteurs.html"
+        >Auteurs</md-outlined-button
+      >
+    </nav>
+
+    <main>
+      <md-card>
+        <h1 class="md-typescale-display-large">Bibliothèque</h1>
+        <p class="md-sys-typescale-label-medium-font">
+          Ce site contient des fiches de livres. <br />
+          Vous pouvez sélectionner les livres par une liste de livres ou par une
+          liste d'auteurs. <br />
+          Vous pouvez aussi voir le détails des livres. <br />
+        </p>
+      </md-card>
+    </main>
+    <footer>
+      <p class="md-typescale-styles">Auteur du site : Max</p>
+    </footer>
+  </body>
+</html>

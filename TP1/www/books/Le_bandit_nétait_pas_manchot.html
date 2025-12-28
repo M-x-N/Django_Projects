@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="importmap">
+      {
+        "imports": {
+          "@material/web/": "https://esm.run/@material/web/"
+        }
+      }
+    </script>
+    <script type="module">
+      import "@material/web/all.js";
+      import { styles as typescaleStyles } from "@material/web/typography/md-typescale-styles.js";
+
+      document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+    </script>
+
+    <title>Détail du Livre</title>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      main {
+        width: 80%;
+        margin-top: 20px;
+      }
+      .details {
+        margin-bottom: 20px;
+      }
+      footer {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        padding: 20px 0;
+        background-color: #f5f5f5;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <md-card class="details">
+        <h1 class="md-typescale-headline-large">Titre: Le bandit n'était pas manchot</h1>
+        <p class="md-sys-typescale-body-large">
+          <strong>Auteur:</strong> Jarrige
+        </p>
+        <p class="md-sys-typescale-body-large">
+          <strong>Maison d'édition:</strong> Fayard
+        </p>
+        <p class="md-sys-typescale-body-large">
+          <strong>Année de parution:</strong> 2002
+        </p>
+        <p class="md-sys-typescale-body-large"><strong>ISBN:</strong> 9782213613000</p>
+        <h2 class="md-typescale-title-large">Quatrième de couverture :</h2>
+        <p class="md-sys-typescale-body-large">Rien ne va plus à Juan-les-Pins. Des femmes seules sont sauvagement assassinées selon un rituel particulièrement sanglant. Sans élément pour établir un lien entre les victimes, tout laisse croire que les meurtres sont l'œuvre d'une seule et même personne. La police dispose de très peu d'indices : pas d'effraction, pas d'empreinte, seule une trace d'ADN laissée sur les lieux du crime. Les médias se déchaînent, la juge s'impatiente et le boss met la pression sur le Commissaire Dupin. Ses hommes n'ont que 48 heures pour boucler l'affaire. La population a peur ; qui sera la prochaine victime ? Et surtout, qui détient la clé de l'énigme ? Quand l'enquête piétine, il faut faire preuve d'imagination. Faites vos jeux.</p>
+      </md-card>
+    </main>
+
+    <footer>
+      <md-text-button href="../books.html">Menu des Livres</md-text-button>
+      <md-text-button href="../index.html">Accueil</md-text-button>
+    </footer>
+  </body>
+</html>
